@@ -1,0 +1,14 @@
+{
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "name": "myExt",
+  "description": "my ext description",
+  "chrome_url_overrides" : {
+    "newtab": "index.html"
+  },
+  "permissions": ["activeTab"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "myExt default_title"
+  }
+}
