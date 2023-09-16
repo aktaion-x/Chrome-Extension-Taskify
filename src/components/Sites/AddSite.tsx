@@ -27,7 +27,7 @@ function AddSite({ setOpenAddPopup, setSites }: AddSiteType) {
 
   return (
     <div className="w-full h-full top-0 left-0 z-50 bg-[#00000090] absolute shadow-2xl">
-      <div className="lg:w-2/6 max-w-[500px] w-4/6 absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 dark:bg-[#0a0a0a] bg-[#eee] rounded px-8 py-5">
+      <div className="lg:w-2/6 max-w-[500px] w-4/6 absolute -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 bg-[#0a0a0a] rounded px-8 py-5">
         <form onSubmit={e => handleSubmit(e)}>
           <div className="flex justify-between items-start">
             <h2 className="text-xl mb-6">Add Site</h2>
@@ -37,11 +37,11 @@ function AddSite({ setOpenAddPopup, setSites }: AddSiteType) {
           </div>
           <label className="flex flex-col gap-1 mb-8">
             <span className="text-sm">URL</span>
-            <input value={url} onChange={(e) => setUrl(e.target.value)} className="dark:bg-[#202124] px-3 py-1 text-sm border-gray-500 outline-none border rounded" type="text" placeholder="Site URL" autoFocus />
+            <input value={url} onChange={(e) => setUrl(e.target.value)} className="bg-[#202124] px-3 py-1 text-sm border-gray-500 outline-none border rounded" type="text" placeholder="Site URL" autoFocus />
           </label>
           <label className="flex flex-col gap-1 mb-8">
             <span className="text-sm">Name</span>
-            <input value={name} onChange={(e) => setName(e.target.value)} className="dark:bg-[#202124] px-3 py-1 text-sm border-gray-500 outline-none border rounded" type="text" placeholder="Site Name" />
+            <input value={name} onChange={(e) => setName(e.target.value)} className="bg-[#202124] px-3 py-1 text-sm border-gray-500 outline-none border rounded" type="text" placeholder="Site Name" />
           </label>
           {error && (<div className="text-red-100 text-xs">{error}</div>)}
           <button className="btn px-4 py-1 mx-auto block rounded-md mt-16">
