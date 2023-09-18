@@ -10,5 +10,8 @@
   "action": {
     "default_popup": "popup.html",
     "default_title": "myExt default_title"
+  },
+  "icons": {
+    "128": "icon-red.png"
   }
 }

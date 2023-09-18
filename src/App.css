@@ -8,6 +8,9 @@
 div.sites:hover .delete-site {
   opacity: 1;
 }
+.todo-form input {
+  font-size: 16px;
+}
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -21,4 +24,20 @@ div.sites:hover .delete-site {
   background-color: #00000024;
   border-radius: 50rem;
 }
+.drop-menu {
+  transition: ease-out .4s;
+}
+.drop-menu ::-webkit-scrollbar {
+  width: 6px;
+}
 
+.drop-menu ::-webkit-scrollbar-thumb {
+  background-color: rgb(127 29 29);
+  border-radius: 50rem;
+}
+
+.drop-menu ::-webkit-scrollbar-track {
+  background-color: #333;
+  border-radius: 50rem;
+  margin-top: 2px;
+}
